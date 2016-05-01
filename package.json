@@ -1,6 +1,6 @@
 {
   "name": "hexo-to-s3",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "bin/hexo-to-s3.js",
   "scripts": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/matb/hexo-to-s3#readme",
   "dependencies": {
+    "aws-sdk": "^2.3.7",
     "minimist": "^1.2.0",
     "s3": "^4.4.0"
   }
