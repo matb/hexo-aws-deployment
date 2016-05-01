@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/matb/hexo-to-s3.git"
   },
+  "keywords": "hexo s3",
   "bugs": {
     "url": "https://github.com/matb/hexo-to-s3/issues"
   },
