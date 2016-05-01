@@ -7,7 +7,19 @@ var fs = require('fs');
 var s3 = require('s3');
 var AWS = require('aws-sdk');
 
-var argv = minimist(process.argv.slice(2), {string: 'bucket'});
+
+var argv = minimist(process.argv.slice(2));
+
+function findRegion(){
+    var region = argv.region;
+
+    if(!region){
+        region = process.env.AWS_DEFAULT_REGION;
+    }
+
+    console.log('Use region : '+ region);
+    return region;
+}
 
 var bucket = argv.bucket;
 if (!bucket) {
@@ -19,8 +31,7 @@ if (!fs.existsSync('public')) {
 }
 
 console.log('Start deploying to ' + bucket);
-
-var awsS3Client = new AWS.S3();
+var awsS3Client = new AWS.S3({region: findRegion()});
 var options = {
     s3Client: awsS3Client
 };

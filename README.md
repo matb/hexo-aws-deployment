@@ -48,9 +48,15 @@ Execute this npm command to deploy:
     node node_modules/hexo-to-s3/bin/hexo-to-s3.js --bucket YOUR_BUCKET_NAME
 ```
 
+## Parameters
+### bucket
+Mandatory parameter that defines the upload target
+
+### region
+Optional, defines the region that is used for the upload. If this parameter is not set, hexo-to-s3 tries to read the environment variable AWS_DEFAULT_REGION.
+
 ## Configure your AWS account
 
 hexo-to-s3 uses the Amazon AWS SDK underneath. You can use the usual means to load credentials. 
 More information can be found [here](http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html).
-
 
