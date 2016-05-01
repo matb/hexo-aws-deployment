@@ -1,24 +1,22 @@
 {
-  "name": "hexo-aws-deployment",
-  "version": "1.0.0",
+  "name": "hexo-to-s3",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "bin/hexo-to-s3.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matb/hexo-aws-deployment.git"
+    "url": "git+https://github.com/matb/hexo-to-s3.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matb/hexo-aws-deployment/issues"
+    "url": "https://github.com/matb/hexo-to-s3/issues"
   },
   "bin": {
     "hexo-to-s3": "bin/deploy.js"
   },
-  "homepage": "https://github.com/matb/hexo-aws-deployment#readme",
+  "homepage": "https://github.com/matb/hexo-to-s3#readme",
   "dependencies": {
     "minimist": "^1.2.0",
     "s3": "^4.4.0"
