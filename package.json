@@ -1,6 +1,6 @@
 {
   "name": "hexo-to-s3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "bin/hexo-to-s3.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "url": "https://github.com/matb/hexo-to-s3/issues"
   },
   "bin": {
-    "hexo-to-s3": "bin/deploy.js"
+    "hexo-to-s3": "bin/hexo-to-s3.js"
   },
   "homepage": "https://github.com/matb/hexo-to-s3#readme",
   "dependencies": {
