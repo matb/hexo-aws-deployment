@@ -37,6 +37,7 @@ var params = {
 var uploader = client.uploadDir(params);
 uploader.on('error', function (err) {
     console.error('Error while uploading: ', err.stack);
+    process.exit(1);
 });
 uploader.on('fileUploadEnd', function (localFilePath) {
     console.log('Uploaded: ' + localFilePath)
